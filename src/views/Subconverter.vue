@@ -36,9 +36,9 @@
                     style="width: 100%"
                     v-model="form.customBackend"
                     :fetch-suggestions="backendSearch"
-                    placeholder="动动小手，（建议）自行搭建后端服务。例：http://127.0.0.1:25500/sub?"
+                    placeholder="http://101.43.27.121:25500/sub?"
                   >
-                    <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
+                    # <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
                   </el-autocomplete>
                 </el-form-item>
                 <el-form-item label="远程配置:">
@@ -296,11 +296,16 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [{ value: "http://101.43.27.121:25500/sub?" }],
         remoteConfig: [
           {
             label: "universal",
             options: [
+              {
+                label: "ACL4SSR_AdblockPlus",
+                value:
+                  "https://jsd.cdn.zzko.cn/gh/ACL4SSR/ACL4SSR@master/Clash/config/ACL4SSR_AdblockPlus.ini"
+              },
               {
                 label: "No-Urltest",
                 value:
