@@ -380,7 +380,7 @@ export default {
         clientType: "",
         customBackend: "",
         remoteConfig: "",
-        excludeRemarks: "PRO",
+        excludeRemarks: "PRO|速度随缘|龟速|冷门",
         includeRemarks: "",
         filename: "config.yaml",
         emoji: true,
